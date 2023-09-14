@@ -1,0 +1,105 @@
+.contact {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.contact h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: 600;
+    font-size: 4.5rem;
+}
+
+.contact p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contact-box{
+    background: #fff;
+    display: flex;
+}
+
+.contact-box .contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-box .contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: lightgreen;
+    color: #fff;
+}
+
+.contact h1{
+    margin-bottom: 10px;
+
+}
+
+.contact p{
+    margin-bottom: 40px;
+}
+
+.contact-box .contact-left .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact-box .contact-left .input-row .input-group{
+    flex-basis: 45%;
+}
+
+.contact-box .contact-left .input-row .input-group input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+    
+}
+
+.contact-box .contact-left textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.contact-box .contact-left label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+    
+}
+
+.contact-box .contact-left button{
+    background: #1c00b5;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, .3);
+}
+
+.contact-box .contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.contact-right tr td:first-child{
+    padding-right: 20px;
+}
+
+.contact-right tr td{
+    padding-top: 20px;
+}
+
