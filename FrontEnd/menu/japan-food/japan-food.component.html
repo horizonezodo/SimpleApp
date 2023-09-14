@@ -1,0 +1,53 @@
+<div class="col-md-6 offset-md-3">
+  <h3> Create Employee </h3>
+  <form (ngSubmit) = "onSubmit()">
+  
+      <div class="form-group">
+          <label> Food Name</label>
+          <input type="text" class ="form-control" id = "foodName"
+              [(ngModel)] = "food.foodName" name = "foodName">
+      </div>
+  
+      <div class="form-group">
+          <label>Food Description</label>
+          <input type="text" class ="form-control" id = "foodDescription"
+              [(ngModel)] = "food.foodDescription" name = "foodDescription">
+      </div>
+  
+      <div class="form-group">
+          <label> Cost Price</label>
+          <input type="text" class ="form-control" id = "costPrice"
+              [(ngModel)] = "food.costPrice" name = "costPrice">
+      </div>
+
+      <div class="form-group">
+          <label> Sale Price </label>
+          <input type="number" class ="form-control" id = "salePrice"
+              [(ngModel)] = "food.salePrice" name = "salePrice">
+      </div>
+
+      <div class="form-group">
+        <label> Food Quantity </label>
+        <input type="number" class ="form-control" id = "quantity"
+            [(ngModel)] = "food.quantity" name = "quantity">
+    </div>
+
+    <div class="form-group">
+      <label> Food Image </label>
+      <input type="file" class ="form-control" id = "foodimage"
+         (change)="onSelecteFile($event)"  name = "foodimage">
+    </div>
+    
+    <div class="form-group">
+      <input type="text" class ="form-control" id = "foodimage"
+            [(ngModel)]="food.foodImage"  name = "foodimage" value="{{url1}}">
+    </div>
+    <br>
+    <div class="form-group img">
+      <img [src]="url2" height="200">
+    </div>
+
+      <button class = "btn btn-success" type ="submit">Submit</button>
+  
+  </form>
+  </div> 

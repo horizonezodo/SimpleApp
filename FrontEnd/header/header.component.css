@@ -1,0 +1,162 @@
+:root{
+    --orange: #ff7800;
+    --black: #130f40;
+    -light-cokor:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border: .2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    text-decoration: none;
+}
+
+header .logo span{
+    color: #ff7800;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+    text-decoration: none;
+}
+
+header fa-icon{
+    color: #ff7800;
+}
+
+header .navbar a:hover{
+    color: #ff7800;
+    text-decoration: underline;
+}
+
+header .icons{
+    display: flex;
+}
+header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+header .icons div:hover{
+    background: #666;
+    color: #fff;
+}
+
+header .search-form{
+    position: absolute;
+    top: 110%; 
+    width: 50rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+header .search-form input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+    border: none;
+}
+
+header .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+header .search-form label fa-icon{
+    color: #130f40;
+}
+
+header .search-form label fa-icon:hover{
+    color: #ff7800;
+}
+
+header .loginForm{
+    position: absolute;
+    top: 110%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: #fff;
+}
+
+header .loginForm .box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+header .loginForm .box .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+}
+
+.btn:hover{
+    background: #ff7800;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+
+@media(max-width:450px){
+    html{
+        font-size:50%
+    }
+}

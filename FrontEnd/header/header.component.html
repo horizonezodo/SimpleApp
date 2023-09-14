@@ -1,0 +1,27 @@
+<header>
+    <a href="#" class="logo"><fa-icon [icon]="foodIcon"></fa-icon> Horizon<span>Ezodo</span></a>
+
+    <nav class="navbar">
+        <a routerLink="dashboard" routerLinkActive="active">Home</a>
+        <a routerLink="menu" routerLinkActive="active">About Us</a>
+        <a routerLink="about" routerLinkActive="active">Our Menu</a>
+        <a routerLink="contact" routerLinkActive="active">Contact Us</a>
+    </nav>
+
+    <div class="icons">
+        <div><fa-icon [icon]="searchIcon" (click)="showForm()"></fa-icon></div>
+        <div><fa-icon [icon]="userIcon" (click)="showLogin()"></fa-icon></div>
+    </div>
+
+    <form class="search-form" [style.right]="rightForm">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><fa-icon [icon]="searchIcon"></fa-icon></label>
+    </form>
+
+    <div class="loginForm" [style.right]="rightLogin">
+        <div class="box">
+           <div> <a routerLink="login" routerLinkActive="active" class="btn">Login</a></div>
+           <div><a class="btn" (click)="logout()">Logout</a></div>
+        </div>
+    </div>
+</header>

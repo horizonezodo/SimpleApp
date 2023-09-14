@@ -1,0 +1,59 @@
+.menu-container .banner{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.menu-container .sub-heading{
+    text-align: center;
+    color: #666;
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.menu-container .banner .image{
+    flex:  1 1 45rem;
+}
+
+.menu-container .banner .image img{
+    width: 100%;
+}
+
+.menu-container .banner .content{
+    flex: 1 1 45rem;
+}
+
+.menu-container .banner .content h3{
+    color: #9999;
+    font-size: 4rem;
+    padding: .5rem 0;
+
+}
+
+.menu-container .banner .content span{
+    color: cornflowerblue;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+} 
+
+.menu-container .banner .content .btn{
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: 1px solid #fff;
+    margin-left: 15px;
+    background: #ff7800;
+    color: #fff;
+ }
+
+ .menu-container .banner .content .btn:hover{
+    background: transparent;
+    border: 1px solid #ff7800;
+    color: #ccc;
+    transition: .5;
+ }

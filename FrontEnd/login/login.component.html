@@ -1,0 +1,29 @@
+<section class="login-section">
+    <div class="login-class">
+        <div class="form-value">
+            <form action="">
+                <h2>Login</h2>
+                <p>{{response}}</p>
+                <div class="inputbox">
+                    <span class="icon"><fa-icon [icon]="faUserIcon"></fa-icon></span>
+                    <input required type="text" name="username" id="username" [(ngModel)]="login.username">
+                    <label for="username">Username</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><fa-icon [icon]="faLockIcon"></fa-icon> </span>
+                    <input required type="password" name="password" id="password" [(ngModel)]="login.password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="check">
+                     <label><input type="checkbox">  Remember me</label>
+                     
+                </div>
+                <button type="submit" (click)="loginBtn()" class="btn">Login</button>
+                <div class="register">
+                    <p>Don't have an account ?
+                    <a  class="register-link" (click)="goToRegister()">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

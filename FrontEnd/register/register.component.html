@@ -1,0 +1,44 @@
+<section class="register-section">
+    <div class="register-class">
+        <div class="form-value">
+            <form action="">
+                <h2>Register</h2>
+                <p>{{response}}</p>
+                <div class="inputbox">
+                    <span class="icon"><fa-icon [icon]="faUserIcon"></fa-icon></span>
+                    <input required type="text" name="username" id="username" [(ngModel)]="register.username">
+                    <label for="username">Username</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><fa-icon [icon]="faMailIcon"></fa-icon></span>
+                    <input required type="email" name="email" id="email" [(ngModel)]="register.email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><fa-icon [icon]="faPhoneIcon"></fa-icon></span>
+                    <input required type="text" name="phone" id="phone" [(ngModel)]="register.phone">
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><fa-icon [icon]="faLockIcon"></fa-icon> </span>
+                    <input required type="password" name="password" id="password" [(ngModel)]="register.password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="inputbox">
+                    <span class="icon"><fa-icon [icon]="faLockIcon"></fa-icon> </span>
+                    <input required type="password" name="repasswor" id="repasswor" [(ngModel)]="repassword">
+                    <label for="repasswor">Cofim Password</label>
+                </div>
+                <div class="check">
+                     <!-- <label><input type="checkbox">  Remember me</label> -->
+                     
+                </div>
+                <button type="submit" (click)="registerBtn()" class="btn">Register</button>
+                <div class="register">
+                    <p>You have an account ?
+                    <a  class="register-link" (click)="goToLoginPage()">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
